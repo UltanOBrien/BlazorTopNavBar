@@ -99,11 +99,35 @@
         display: block;
 
         /* Allow sidebar to scroll for tall menus */
-       /* height: calc(100vh - 3.5rem);
-        overflow-y: auto;*/
+        /*height: calc(100vh - 3.5rem);*/
+        height: auto;
+        overflow-y: auto;
+    }
+
+    #hiddenbar {
+        display: none !important;
+    }
+
+    #navdirection {
+        flex-direction: row;
+    }
+
+    
+}
+
+@media (max-width: 641px) {
+    #navdirection {
+        flex-direction: column;
     }
 }
 
+
 .topnav {
     background-image: linear-gradient(90deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+@media (max-width: 250px) {
+    #hiddenbrand {
+        display: none;
+    }
 }

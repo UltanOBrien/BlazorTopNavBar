@@ -44,8 +44,8 @@ main {
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
     }
-
 }
+
 
 @media (min-width: 641px) {
     .page {
@@ -76,6 +76,9 @@ main {
         padding-right: 1.5rem !important;
     }
 
+    .top-row {
+        display: none;
+    }
 }
 
 #blazor-error-ui {
@@ -98,3 +101,4 @@ main {
         right: 0.75rem;
         top: 0.5rem;
     }
+
